@@ -29,7 +29,7 @@ Test length of time between date and now.
 > Usage: solr-mon.py [options]<br>
 > <br>
 > Options:<br>
->   --version             show program's version number and exit<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  --version             show program's version number and exit<br>
 >   -h, --help            show this help message and exit<br>
 >   -a, --allcores        Execute check against all cores [only valid for type<br>
 >                         'status, path relative to status/<core>']<br>

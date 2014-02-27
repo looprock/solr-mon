@@ -29,26 +29,26 @@ Test length of time between date and now.
 > Usage: solr-mon.py [options]<br>
 > <br>
 > Options:<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  --version             show program's version number and exit<br>
->   -h, --help            show this help message and exit<br>
->   -a, --allcores        Execute check against all cores [only valid for type<br>
->                         'status, path relative to status/<core>']<br>
->   -d, --debug           Enable debug mode<br>
->   -D, --datecompare     Do a date comparison, seconds from current time<br>
->   -H SOLR_SERVER, --host=SOLR_SERVER<br>
->                         SOLR Server IPADDRESS<br>
->   -p SOLR_SERVER_PORT, --port=SOLR_SERVER_PORT<br>
->                         SOLR Server port<br>
->   -t STATUS_TYPE, --type=STATUS_TYPE<br>
->                         Which admin interface to hit: status, ping, stats<br>
->   -e EVAL_TYPE, --eval=EVAL_TYPE<br>
->                         Type of evaluation: gt, lt, eq, ne, le, ge, is, not<br>
->   -P PATH, --path=PATH  Path inside the json object you want to check, /<br>
->                         delimited, RE: responseHeader/status<br>
->   -w Warning, --warning=Warning<br>
->                         Exit with WARNING status if criteria met<br>
->   -c Critical, --critical=Critical<br>
-                        Exit with ERROR status if criteria met<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--version             show program's version number and exit<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-h, --help            show this help message and exit<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-a, --allcores        Execute check against all cores [only valid for type<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        'status, path relative to status/<core>']<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-d, --debug           Enable debug mode<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-D, --datecompare     Do a date comparison, seconds from current time<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-H SOLR_SERVER, --host=SOLR_SERVER<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        SOLR Server IPADDRESS<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-p SOLR_SERVER_PORT, --port=SOLR_SERVER_PORT<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        SOLR Server port<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-t STATUS_TYPE, --type=STATUS_TYPE<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        Which admin interface to hit: status, ping, stats<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-e EVAL_TYPE, --eval=EVAL_TYPE<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        Type of evaluation: gt, lt, eq, ne, le, ge, is, not<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-P PATH, --path=PATH  Path inside the json object you want to check, /<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        delimited, RE: responseHeader/status<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-w Warning, --warning=Warning<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        Exit with WARNING status if criteria met<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-c Critical, --critical=Critical<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      Exit with ERROR status if criteria met<br>
 
 # Examples
 

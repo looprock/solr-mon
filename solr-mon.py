@@ -111,7 +111,7 @@ def readdata(data, eval_type, level, test, path):
 			q += "['%s']" % i
 	x = eval(q)
 	if cmd_options.datecompare:
-		now = datetime.datetime.now()
+		now = datetime.datetime.utcnow()
 		v = datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ")
 		tmp = now - v
 		x = tmp.total_seconds()

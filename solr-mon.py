@@ -161,7 +161,7 @@ def testresults(data, eval_type, warning, critical, path):
 			print readdata(data, eval_type, "WARNING", warning, path)
 		w = readdata(data, eval_type, "WARNING", warning, path)
 		if cmd_options.bug:
-			print "**** DEBUG: found w!"
+			print "**** DEBUG: read WARNING state!"
 			print w
 		if w["result"] > response:
 			printw = "true"
@@ -173,7 +173,7 @@ def testresults(data, eval_type, warning, critical, path):
                 	print readdata(data, eval_type, "ERROR", critical, path)
         	c = readdata(data, eval_type, "ERROR", critical, path)
 		if cmd_options.bug:
-			print "**** DEBUG: found c!"
+			print "**** DEBUG: read CRITICAL state!"
 			print c
         	if c["result"] > response:
 			printc = "true"

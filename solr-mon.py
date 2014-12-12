@@ -82,7 +82,7 @@ def getsolrsgtatus(server,port,type="status"):
 	if cmd_options.bug:
 		print "DEBUG: %s" % url
 	try:
-        	conn = urllib2.urlopen(url)
+        	conn = urllib2.urlopen(url, timeout=5)
 	except urllib2.URLError, e:
 		print "ERROR: %s" % (e)
 		sys.exit(returnlevel("ERROR"))
